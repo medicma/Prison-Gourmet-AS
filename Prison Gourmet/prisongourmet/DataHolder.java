@@ -20,12 +20,12 @@ public class DataHolder extends Application{
         super.onCreate();
         Parse.enableLocalDatastore(this);
         Parse.initialize(new Parse.Configuration.Builder(getBaseContext())
-                .applicationId("pQ3hJlWh9LiIVJ6iETzOS6Tg6ForXuiyATQCJoNZ")
-                .clientKey("0AZ7o8sKrkRcj18z4AxWDSkWsz7qWR3hmqQJhKIa")
+                .applicationId("")
+                .clientKey("")
                 .server("https://parseapi.back4app.com")
                // .enableLocalDataStore()
                 .build());
-       // Parse.initialize(this, "pQ3hJlWh9LiIVJ6iETzOS6Tg6ForXuiyATQCJoNZ", "0AZ7o8sKrkRcj18z4AxWDSkWsz7qWR3hmqQJhKIa");
+      
         ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 }
